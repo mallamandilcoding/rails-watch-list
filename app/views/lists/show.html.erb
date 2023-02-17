@@ -7,5 +7,6 @@
              </div>
 
   <% end %>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
   <%= link_to "+", new_list_bookmark_path(@list)  %>
 </div>
