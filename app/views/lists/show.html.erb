@@ -1,0 +1,11 @@
+<div class="container">
+<h2>This is the bookmarks</h2>
+  <% @bookmarks.each_with_index do |bookmark, index| %>
+    <div>
+      <p><%= bookmark.comment %></p>
+      <p><%= bookmark.movie.title %></p>
+             </div>
+
+  <% end %>
+  <%= link_to "+", new_list_bookmark_path(@list)  %>
+</div>
