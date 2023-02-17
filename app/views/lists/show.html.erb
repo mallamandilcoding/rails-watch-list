@@ -4,9 +4,10 @@
     <div>
       <p><%= bookmark.comment %></p>
       <p><%= bookmark.movie.title %></p>
-             </div>
+    </div>
 
   <% end %>
-  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
-  <%= link_to "+", new_list_bookmark_path(@list)  %>
+
+
+  <%= link_to "Add a Bookmark", new_list_bookmark_path(@list), class: "btn btn-success" %>
 </div>
